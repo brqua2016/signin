@@ -1,3 +1,13 @@
-<p>
-  welcome works!
-</p>
+<h1>Welcome to Vestas Nacelles</h1>
+<div>
+
+<form>
+    <input class="signIn" type="button" value="Sign In" onclick="window.location.href='/visitor'" />
+    <input class="signOut" type="button" value="Sign Out" onclick="window.location.href='/leave'" />
+    </form>
+</div>
+
+<h1>Slideshow Demo</h1>
+<section>
+  <ng-slideshow [options]="options" [images]="images"></ng-slideshow>
+</section>
