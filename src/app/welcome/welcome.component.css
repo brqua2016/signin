@@ -1,33 +1,114 @@
-input.signIn {
+h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: 'Adamina';
+    -webkit-text-stroke: 0.001px white;
+}
+
+.signIn {
     width: 300px;
-    padding: 20px;
+    padding: 40px;
+    margin: 200px 60px 0px 50px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 200%;
     background: #3366cc;
     color: #fff;
     border: 1px solid #3366cc;
-    border-radius: 10px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 15px 1px #000000;
     }
-    input.MyButton:hover {
-    color: #ffff00;
-    background: #000;
+.signIn:hover {
+    color: blue;
+    background: yellow;
     border: 1px solid #fff;
+}
+.signOut {
+    width: 300px;
+    margin: 0px 0px 0px 0px;
+    padding: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 200%;
+    background: #f9f9fa;
+    color: rgb(7, 7, 7);
+    border: 1px solid #3366cc;
+    border-radius: 50px;
+    box-shadow: 4px 4px 15px 1px #000000;
     }
+  
+  .signOut:hover {
+    color: #ffff00;
+    background: blue;
+    border: 1px solid #fff;
+    
+}
 
-    input.signOut {
-        width: 300px;
-        padding: 20px;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 150%;
-        background: #f9f9fa;
-        color: rgb(7, 7, 7);
-        border: 1px solid #3366cc;
-        border-radius: 10px;
-        }
-        input.MyButton:hover {
-        color: #ffff00;
-        background: #000;
-        border: 1px solid #fff;
-        }
+.buttons {
+  width: 800px;
+  height: 500px;
+  /* background-color: red; */
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.crossfade > figure:nth-child(1) { background-image: url('http://lorempixel.com/800/600/sports/'); }
+
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('http://lorempixel.com/800/600/animals/');
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('http://lorempixel.com/800/600/city/');
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('http://lorempixel.com/800/600/nature/');
+}
+
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('http://lorempixel.com/800/600/technics/');
+}
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
